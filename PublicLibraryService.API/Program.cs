@@ -1,12 +1,10 @@
 using Asp.Versioning;
 using Asp.Versioning.ApiExplorer;
-using Microsoft.EntityFrameworkCore;
 using PublicLibraryService.API.Middleware;
 using PublicLibraryService.API.Swagger;
 using PublicLibraryService.Application.Filters;
 using PublicLibraryService.Application.Mappings;
 using PublicLibraryService.Application.Services;
-using PublicLibraryService.Infrastructure.Data;
 using PublicLibraryService.Infrastructure.Services;
 using Serilog;
 
@@ -36,15 +34,15 @@ builder.Services.AddApiVersioning(options =>
     options.AssumeDefaultVersionWhenUnspecified = true;
     // Use whatever reader you want
     options.ApiVersionReader = ApiVersionReader.Combine(
-            new UrlSegmentApiVersionReader()); 
+            new UrlSegmentApiVersionReader());
 }).AddApiExplorer(options =>
 {
-   
+
     options.GroupNameFormat = "'v'VVV";
 
-    
+
     options.SubstituteApiVersionInUrl = true;
-}); 
+});
 
 
 // Add Application Services
@@ -77,7 +75,7 @@ app.UseMiddleware<ErrorHandlingMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {
-   app.UseSwagger();
+    app.UseSwagger();
     app.UseSwaggerUI(options =>
     {
         foreach (var description in apiVersionDescriptionProvider.ApiVersionDescriptions)

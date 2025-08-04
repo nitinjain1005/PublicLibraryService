@@ -14,18 +14,31 @@ namespace PublicLibraryService.Infrastructure.Services
 {
     public static class InfrastructureServiceCollectionExtensions
     {
+
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
+            var baseDir = AppContext.BaseDirectory;
+
+            var rootPath = Path.GetFullPath(Path.Combine(baseDir, "..", "..", "..", ".."));
+
+            var publiclibraryPath = Path.Combine(rootPath, "PublicLibraryService.Infrastructure", "Database", "publiclibrary.db");
+
+            // Ensure the folder exists
+            var folderPath = Path.GetDirectoryName(publiclibraryPath)!;
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            // Use this path in connection string
+            var connectionString = $"Data Source={publiclibraryPath}";
+
             // Add DbContext (SQLite)
             services.AddDbContext<PublicLibraryDbContext>(options =>
             {
-                var connectionString = configuration.GetConnectionString("PublicLibraryDbConnection");
                 options.UseSqlite(connectionString);
             });
 
-            // Add repositories, unit of work, etc.
-            
-            services.AddDbContext<PublicLibraryDbContext>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IBookRepository, BookRepository>();
             services.AddScoped<IBookInventoryRepository, BookInventoryRepository>();

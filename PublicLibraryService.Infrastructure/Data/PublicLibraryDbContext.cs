@@ -4,11 +4,8 @@ using PublicLibraryService.Infrastructure.DataSeeds;
 
 namespace PublicLibraryService.Infrastructure.Data
 {
-    public class PublicLibraryDbContext : DbContext
+    public class PublicLibraryDbContext(DbContextOptions<PublicLibraryDbContext> options) : DbContext(options)
     {
-        public PublicLibraryDbContext(DbContextOptions<PublicLibraryDbContext> options)
-            : base(options) { }
-
         public DbSet<Book> Books => Set<Book>();
         public DbSet<BookInventory> BookInventories => Set<BookInventory>();
         public DbSet<BookLending> BookLendings => Set<BookLending>();
