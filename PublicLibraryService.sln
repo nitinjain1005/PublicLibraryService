@@ -24,7 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicLibraryService.SystemTests", "PublicLibraryService.SystemTests\PublicLibraryService.SystemTests.csproj", "{A663C443-CD41-42DA-8BC2-44C750DD2A07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicLibraryService.WarmUplib", "PublicLibraryService.WarmUplib\PublicLibraryService.WarmUplib.csproj", "{3F199F44-C2C6-4F90-A346-0FE528BA4D15}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicLibraryService.WarmUpTasklib", "PublicLibraryService.WarmUplib\PublicLibraryService.WarmUpTasklib.csproj", "{3F199F44-C2C6-4F90-A346-0FE528BA4D15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

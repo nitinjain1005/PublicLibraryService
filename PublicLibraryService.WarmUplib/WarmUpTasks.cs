@@ -1,9 +1,8 @@
 ﻿
-namespace PublicLibraryService.WarmUplib
+namespace PublicLibraryService.WarmUpTasklib
 {
 
-
-    namespace WarmUpTasks
+    namespace WarmUpTasklib
     {
         public static class WarmUpTasks
         {
