@@ -25,7 +25,7 @@ dotnet ef migrations add InitialCreate
 
 This will generate migration files in the Migrations/ folder.
 
-✅ 3.** Apply the Migration (Create the SQLite DB)**
+✅ 3.**Apply the Migration (Create the SQLite DB)**
 
 
 dotnet ef database update
