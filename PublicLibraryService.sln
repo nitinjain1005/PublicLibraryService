@@ -24,7 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicLibraryService.SystemTests", "PublicLibraryService.SystemTests\PublicLibraryService.SystemTests.csproj", "{A663C443-CD41-42DA-8BC2-44C750DD2A07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicLibraryService.WarmUpTasklib", "PublicLibraryService.WarmUplib\PublicLibraryService.WarmUpTasklib.csproj", "{3F199F44-C2C6-4F90-A346-0FE528BA4D15}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicLibraryService.WarmUpTasks", "PublicLibraryService.WarmUpTasks\PublicLibraryService.WarmUpTasks.csproj", "{A53F9B1C-33DE-41F0-A08D-08D28A0938A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,10 +64,10 @@ Global
 		{A663C443-CD41-42DA-8BC2-44C750DD2A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A663C443-CD41-42DA-8BC2-44C750DD2A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A663C443-CD41-42DA-8BC2-44C750DD2A07}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3F199F44-C2C6-4F90-A346-0FE528BA4D15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3F199F44-C2C6-4F90-A346-0FE528BA4D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3F199F44-C2C6-4F90-A346-0FE528BA4D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3F199F44-C2C6-4F90-A346-0FE528BA4D15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A53F9B1C-33DE-41F0-A08D-08D28A0938A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A53F9B1C-33DE-41F0-A08D-08D28A0938A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A53F9B1C-33DE-41F0-A08D-08D28A0938A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A53F9B1C-33DE-41F0-A08D-08D28A0938A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
